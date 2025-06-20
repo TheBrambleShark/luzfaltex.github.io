@@ -1,0 +1,15 @@
+name: Upload release to NFSN
+on:
+  release:
+    types: [created]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Current release
+        id: get_current_release
+        uses: joutvhu/get-release@v1
+        with:
+          debug: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

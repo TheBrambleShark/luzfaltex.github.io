@@ -1,0 +1,87 @@
+site_name: LuzFaltex
+site_url: https://www.luzfaltex.com
+repo_url: https://github.com/LuzFaltex/luzfaltex.github.io/
+edit_uri: blob/main/docs/
+extra_css:
+  - styles/extra.css
+extra_javascript:
+  - js/extra.js
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: img/favicon.svg
+  logo: img/favicon.svg
+  font:
+    text: Fira Sans
+    code: Fira Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - content.action.edit
+  palette:
+    scheme: slate
+    primary: deep purple
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: "#"
+  - def_list
+plugins:
+  - search
+  - privacy
+  - social
+  - git-revision-date:
+      enable_creation_date: true
+  - git-committers:
+      repository: luzfaltex/luzfaltex.github.io
+      branch: main
+copyright: >
+  Documentation licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener license">CC NC-BY 4.0</a> except where otherwise noted.
+  All other content copyright &copy; LuzFaltex, LLC 2014-<span id="year"></span>, all rights reserved.
+  <ul class="is-bar slashes">
+    <li>
+      <a href="/policies/terms" rel="terms-of-service">Terms and Conditions of Service</a>
+    </li>
+    <li>
+      <a href="/policies/privacy" rel="privacy-policy">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="/docs/logos">Logos</a>
+    </li>
+    <li>
+      <a href="/contact">Contact Us</a>
+    </li>
+  </ul>
+nav:
+  - Home: index.md
+  - Communities: communities.md
+  - Docs:
+    - Index: docs/index.md
+    - Documentation:
+      - DMCA:
+        - DMCA Takedown Notice: docs/dmca/takedown-notice.md
+        - DMCA Counter-Notice: docs/dmca/counter-notice.md
+      - Logos: docs/logos.md
+      - Vulnerability Reporting: docs/vulnerabilityReporting.md
+    - Policies:
+      - Code of Conduct: policies/conduct.md
+      - DMCA Takedown Policy: policies/dmca.md
+      - General Staff Guidelines: policies/staffGuidelines.md
+      - Privacy Policy: policies/privacy.md
+      - Trademark Policy: policies/trademark.md
+      - Staff Social Media Policy: policies/socialMedia.md
+      - Terms and Conditions of Service: policies/terms.md
+  - About Us: about.md
+  - Contact: contact/index.md

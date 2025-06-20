@@ -1,0 +1,27 @@
+name: Publish Release
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+      - uses: actions/setup-python@v5
+        name: Setup Python
+        with:
+          python-version: 3.x
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+        name: Install pip packages.
+      - run: mkdocs build
+      - uses: softprops/action-gh-release@v2
+        name: Build Release
+        with:
+          files: site/**/*.*
+          draft: true # We want to have an admin manually approve releases.
+          discussion_category_name: releases
