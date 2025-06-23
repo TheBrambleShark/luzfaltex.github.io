@@ -10,7 +10,7 @@ permissions:
   pages: write
 jobs:
   build:
-    name: Deploy docs
+    name: Build Docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
@@ -25,6 +25,7 @@ jobs:
       - run: mkdocs gh-deploy --force
   
   deploy:
+    name: Deploy Docs
     needs: build_mkdocs
     environment:
       name: github-pages
