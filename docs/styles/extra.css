@@ -1,0 +1,137 @@
+ul.is-unstyled, ol.is-unstyled {
+ list-style: none;   
+}
+
+.md-typeset {
+    & ul.is-bar, & ol.is-bar {
+        margin: 0;
+        list-style: none;
+
+        & li {
+            margin: 0;
+            display: inline;
+        }
+    }
+
+    & ul.slashes, & ol.slashes {
+        & li:not(:first-child)::before {
+            content: "//";
+            padding: 0 5px;
+        }
+    }
+}
+
+.is-text-center {
+    text-align: center;
+}
+
+a.card-link .center {
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.card-link .card-title {
+    font-size: 1.5em;
+}
+
+a.card-link {
+    color: var(--md-primary-bg-color);
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.is-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.is-row .is-col {
+    flex: 1;
+    margin-left: 24px;
+}
+
+.is-row .is-col.is-vertical-center {
+    align-content: center;
+}
+
+.md-typeset ul.fa-ul {
+    list-style-type: none;
+    margin-left: 2em;
+    padding-left: 0;
+
+    li {
+        margin-left: unset;
+        position: relative;
+    }
+
+    .fa-li {
+        left: -2em;
+        top: 0.15em;
+        position: absolute;
+        text-align: center;
+        width: 2em;
+        line-height: inherit;
+        display: initial;
+    }
+}
+
+.logo {
+    margin-right: auto;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark){
+    .md-typeset img.discord-logo path {
+        fill: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .md-typeset img.discord-logo path {
+        fill: #23272A;
+    }    
+}
+
+.frame {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.frame::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #FF3D00 transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+<title>404 Not Found - LuzFaltex</title>
+{% endblock %}
+
+{% block content %}
+<h1>404 Not Found</h1>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404" target="_blank" rel="noopener" title="More info...">
+    <img class="center" src="https://http.cat/404" alt="A cat hiding under a piece of paper." />
+</a>
+<p>The HTTP 404 Not Found client error response status code indicates that the server cannot find the requested resource. Typically, this indicates that the page you are trying to access has been removed.</p>
+<p>What can I do about it?</p>
+<ul>
+    <li>If you got here from a link on this website, you can <a href="/contact">contact us</a> and report the dead link.</li>
+    <li>If you got here from a link on another website, you can go <a href="javascript:history.back()">back</a> to that website and let them know about the dead link.</li>
+    <li>Return to the <a href="https://www.luzfaltex.com/">home page</a>.</li>
+</ul>
+{% endblock %}
