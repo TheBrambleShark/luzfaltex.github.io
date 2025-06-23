@@ -9,7 +9,7 @@ If you believe your content on a *LuzFaltex* project or community was mistakenly
 
 The form below includes information that LuzFaltex needs in order to process a counter notice to a DMCA takedown request. Before you begin, please read [LuzFaltex's Guide to Submitting a DMCA Counter-Notice](../../docs/dmca/counter-notice.md).
 
-<div class="frame"></div>
+<!--<div class="frame"></div>-->
 
 <iframe
       id="JotFormIFrame-251244533562150"
@@ -21,9 +21,9 @@ The form below includes information that LuzFaltex needs in order to process a c
       frameborder="0"
       style="min-width:100%;max-width:100%;height:539px;border:none;"
       scrolling="no"
-  >
-  </iframe>
-  <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-  <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251244533562150']", "https://form.jotform.com/")</script>
+>
+</iframe>
+<script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+<script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251244533562150']", "https://form.jotform.com/")</script>
 
 <noscript>The webform requires Javascript. If you are unable or unwilling to allow Javascript execution on your device, please refer to our <a href="docs/dmca/counter-notice">Guide to submitting a DMCA Counter-Notice</a> to see alternative methods of submitting a counter notice.</noscript>
