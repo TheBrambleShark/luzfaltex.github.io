@@ -21,6 +21,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - content.action.edit
+    - announce.dismiss
   palette:
     scheme: slate
     primary: deep purple
@@ -38,6 +39,7 @@ markdown_extensions:
   - toc:
       permalink: "#"
   - def_list
+  - footnotes
 plugins:
   - search
   - privacy
