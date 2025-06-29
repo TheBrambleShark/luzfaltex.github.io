@@ -1,5 +1,16 @@
-const year = document.getElementById('year');
-year.innerHTML = new Date().getFullYear()
+// document.querySelector('#year').innerText = new Date().getFullYear();
+
+customElements.define(
+    'x-year',
+    class extends HTMLElement {
+      connectedCallback() {
+        const s = document.createElement('span');
+        s.innerText = new Date().getFullYear();
+  
+        this.appendChild(s);
+      }
+    }
+  );
 
 function loader() {
     const loader = document.getElementsByClassName('loader');
